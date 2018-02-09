@@ -1,4 +1,5 @@
 import React from 'react';
+import UserProfileList from './UserProfileList';
 
 function Profiles() {
   return (
@@ -17,6 +18,7 @@ function Profiles() {
         }
       `}</style>
       <h2>Users</h2>
+      <UserProfileList />
     </div>
   );
 }
