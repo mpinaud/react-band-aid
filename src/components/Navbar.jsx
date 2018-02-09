@@ -1,21 +1,17 @@
-import React from 'react';
-import Home from './Home';
-import Login from './Login';
 import Logo from './Logo';
-import Profiles from './Profiles';
-import Search from './Search';
-import SignUp from './SignUp';
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Navbar() {
   return (
     <div>
-      <Logo />
-      <Home />
-      <Profiles />
-      <Search />
-      <Login />
-      or
-      <SignUp />
+      <Link to='/Home'><Logo /></Link>
+      <Link to='/Home'>Home</Link>
+      <Link to='/Profiles'>Profiles</Link>
+      <Link to='/Search'>Search</Link>
+      <Link to='/Login'>Login</Link>
+      <p>or</p>
+      <Link to='/SignUp'>SignUp</Link>
     </div>
   );
 }
