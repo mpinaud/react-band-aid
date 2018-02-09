@@ -13,10 +13,10 @@ BandAid is a record collection management application. Users will be able to sea
 
 ## Setup/Installation Requirements
 
-[View on web browser](https://iband-aid.firebaseapp.com/)
+[View on Angular Version web browser](https://iband-aid.firebaseapp.com/)
 
 Clone or download repository:
-  1. Open [this page](https://github.com/JohnSawiris/team-project) in web browser.
+  1. Open [this page](https://github.com/mpinaud/react-band-aid) in web browser.
   2. Under the repository name, click Clone or download.
   3. In the Clone with HTTPs section, click to copy the clone URL for the repository.
   4. Open Terminal.
