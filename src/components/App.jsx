@@ -1,9 +1,12 @@
 import React from 'react';
+import Body from './Body';
+import Header from './Header';
 
 function App() {
   return(
     <div>
-      Band-Aid
+      <Header />
+      <Body />
     </div>
   );
 }
