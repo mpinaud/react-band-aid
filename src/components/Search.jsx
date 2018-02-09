@@ -25,6 +25,8 @@ function Search() {
           width: 300px;
           border: 3px solid #617073;
           background: none;
+          font-size: 16px;
+          text-align: left;
         }
         button {
           margin-left: 10px;
@@ -32,6 +34,7 @@ function Search() {
           border: 3px solid #617073;
           color: #BA5624;
           font-family: 'Roboto Condensed', sans-serif;
+          font-size: 15px;
         }
       `}</style>
       <h2>Search</h2>
