@@ -9,7 +9,7 @@
 BandAid is a record collection management application. Users will be able to search for a band's records through the BandAid interface which utilizes the Discogs API. Users will be able to sign up for a profile with a name, email, and password. Users with a profile will be able to add records to their collection or wishlist. Users will be able to manage their collection and wishlist by adding and removing entries, or by moving entries from the wishlist to the collection. User will be able to look at an Artists page and see if they are currently touring which is being utilized by the Bands On Tour API.
 
 ## Component Structure
-[View on web browser](react-band-aid/src/assets/img/screen-shot.png)
+[View on web browser](src/assets/img/screen-shot.png "Component Structure")
 
 ## Setup/Installation Requirements
 
