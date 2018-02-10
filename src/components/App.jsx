@@ -1,5 +1,6 @@
 import React from 'react';
 import Body from './Body';
+import Error404 from './Error404';
 import Header from './Header';
 import Home from './Home';
 import Login from './Login';
@@ -36,6 +37,7 @@ function App() {
           <Route path='/Search' component={Search}/>
           <Route path='/Login' component={Login}/>
           <Route path='/SignUp' component={SignUp}/>
+          <Route component={Error404} />
           <Body />
         </Switch>
       </div>
