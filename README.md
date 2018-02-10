@@ -17,7 +17,7 @@ BandAid is a record collection management application. Users will be able to sea
 
 ## Notes
 
-Haven't had any problems with reconfiguring as of yet.
+Haven't face any problems or reached any obstacles when it comes to  reconfiguring from Angular to React as of yet.
 
 ## Setup/Installation Requirements
 
