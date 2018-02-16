@@ -8,7 +8,7 @@ function SignUp(props) {
 
   function handleNewUserSubmissionForm(event) {
     event.preventDefault();
-    props.newUserProfile({email: _email.value, password: _password.value, name: _name.value});
+    props.onCreateProfile({email: _email.value, password: _password.value, name: _name.value});
   }
 
   return (
@@ -56,7 +56,7 @@ function SignUp(props) {
 }
 
 SignUp.propTypes = {
-  newUserProfile: PropTypes.func
+  onCreateProfile: PropTypes.func
 };
 
 export default SignUp;

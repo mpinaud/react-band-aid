@@ -1,7 +1,8 @@
 import React from 'react';
-import UserProfileList from './UserProfileList';
+import ProfileList from './ProfileList';
+import PropTypes from 'prop-types';
 
-function Profiles() {
+function Profiles(props) {
   return (
     <div>
       <style jsx>{`
@@ -18,9 +19,13 @@ function Profiles() {
         }
       `}</style>
       <h2>Users</h2>
-      <UserProfileList />
+      <ProfileList userList={props.userList}/>
     </div>
   );
 }
+
+Profiles.propTypes = {
+  userList: PropTypes.array
+};
 
 export default Profiles;
