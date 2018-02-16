@@ -44,11 +44,11 @@ function SignUp(props) {
       <h2>Sign Up</h2>
       <form onSubmit={handleNewUserSubmissionForm}>
         <label>Email</label>
-        <input type="email" ref={(input) => {_email = input;}}></input>
+        <input type="email" ref={(input) => {_email = input;}}/>
         <label>Password:</label>
-        <input type="password" ref={(input) => {_password = input;}}></input>
+        <input type="password" ref={(input) => {_password = input;}}/>
         <label>Name:</label>
-        <input type="name" ref={(input) => {_name = input;}}></input>
+        <input type="name" ref={(input) => {_name = input;}}/>
         <button type="submit">Sign Up</button>
       </form>
     </div>

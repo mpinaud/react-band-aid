@@ -53,7 +53,7 @@ class App extends React.Component {
             <Route path='/Profiles' render={()=><UserProfileList userList={this.state.masterProfileList}/>}/>
             <Route path='/Search' component={Search}/>
             <Route path='/Login' component={Login}/>
-            <Route path='/SignUp' component={SignUp}/>
+            // <Route path='/SignUp' component={SignUp}/>
             <Route path='/SignUp' render={()=><SignUp newUserProfile={this.handleAddingNewProfileToList}/>}/>
             <Route component={Error404} />
             <Body />

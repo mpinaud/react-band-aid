@@ -1,5 +1,5 @@
 import React from 'react';
-import UserProfile from './UserProfile';
+import Profile from './Profile';
 
 const masterProfileList = [
   {
@@ -53,7 +53,9 @@ function UserProfileList() {
   return (
     <div>
       {masterProfileList.map((user, index) =>
-        <UserProfile name={user.name}
+        <Profile email={user.email}
+          password={user.password}
+          name={user.name}
           key={index}/>
       )}
     </div>

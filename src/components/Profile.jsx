@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UserProfile(props) {
+function Profile(props) {
   return (
     <div>
       <style jsx>{`
@@ -16,8 +16,10 @@ function UserProfile(props) {
   );
 }
 
-UserProfile.propTypes = {
+Profile.propTypes = {
+  email: PropTypes.string,
+  password: PropTypes.string,
   name: PropTypes.string
 };
 
-export default UserProfile;
+export default Profile;
