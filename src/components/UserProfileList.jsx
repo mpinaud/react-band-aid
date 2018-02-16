@@ -2,7 +2,7 @@ import React from 'react';
 import UserProfile from './UserProfile';
 
 const masterUserProfileList = [
-  {
+  { 
     name: 'Adam Smith'
   },
   {

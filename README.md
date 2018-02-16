@@ -17,7 +17,11 @@ BandAid is a record collection management application. Users will be able to sea
 
 ## Notes
 
-Haven't faced any problems or reached any obstacles reconfiguring from Angular to React as of yet. 😎
+1/9/2018
+  Haven't faced any problems or reached any obstacles reconfiguring from Angular to React as of yet. 😎
+
+1/16/2018
+  Reconstructing my component tree from more of a browser routing to component routing that includes all my functions, and where to place state components. This is taking way more time to figure out. For now I'm going to start simple with the sign-up form with in app will hold my state to create new user profile in profiles.
 
 ## Setup/Installation Requirements
 
