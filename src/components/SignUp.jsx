@@ -1,6 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function SignUp() {
+function SignUp(props) {
+  let _email = null;
+  let _password = null;
+  let _name = null;
+
+  function handleNewUserSubmissionForm(event) {
+    event.preventDefault();
+    props.newUserProfile({email: _email.value, password: _password.value, name: _name.value});
+  }
+
   return (
     <div>
       <style jsx>{`
@@ -32,15 +42,21 @@ function SignUp() {
         }
       `}</style>
       <h2>Sign Up</h2>
-      <label for="user-email">Email</label>
-      <input type="email"></input>
-      <label for="user-password">Password:</label>
-      <input type="password"></input>
-      <label for="user-name">Name:</label>
-      <input type="name"></input>
-      <button>Sign Up</button>
+      <form onSubmit={handleNewUserSubmissionForm}>
+        <label>Email</label>
+        <input type="email" ref={(input) => {_email = input;}}></input>
+        <label>Password:</label>
+        <input type="password" ref={(input) => {_password = input;}}></input>
+        <label>Name:</label>
+        <input type="name" ref={(input) => {_name = input;}}></input>
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
   );
 }
+
+SignUp.propTypes = {
+  newUserProfile: PropTypes.func
+};
 
 export default SignUp;

@@ -1,32 +1,50 @@
 import React from 'react';
 import UserProfile from './UserProfile';
 
-const masterUserProfileList = [
-  { 
+const masterProfileList = [
+  {
+    email: '',
+    password: '',
     name: 'Adam Smith'
   },
   {
+    email: '',
+    password: '',
     name: 'M|KEY N|GHTCH|LDE'
   },
   {
+    email: '',
+    password: '',
     name: 'tbssnch'
   },
   {
+    email: '',
+    password: '',
     name: 'Lena'
   },
   {
+    email: '',
+    password: '',
     name: 'Collin'
   },
   {
+    email: '',
+    password: '',
     name: 'Stephanie'
   },
   {
+    email: '',
+    password: '',
     name: 'Laura Leon'
   },
   {
+    email: '',
+    password: '',
     name: 'Hannah'
   },
   {
+    email: '',
+    password: '',
     name: 'Crane'
   }
 ];
@@ -34,7 +52,7 @@ const masterUserProfileList = [
 function UserProfileList() {
   return (
     <div>
-      {masterUserProfileList.map((user, index) =>
+      {masterProfileList.map((user, index) =>
         <UserProfile name={user.name}
           key={index}/>
       )}
