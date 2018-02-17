@@ -27,6 +27,8 @@ BandAid is a record collection management application. Users will be able to sea
 1/16/2018
   Reconstructing my component tree from more of a browser routing to component routing that includes all my functions, and where to place state components. This is taking way more time to figure out. For now I'm going to start simple with the sign-up form with in app will hold my state to create new user profile in profiles.
 
+  It's been hours and through trial and error I'm not able to get my handleNewUserSubmissionForm to be recognized as a function even though I'm declaring it as a PropType.func. Hours.
+
 ## Setup/Installation Requirements
 
 [View Angular Version on web browser](https://iband-aid.firebaseapp.com/)

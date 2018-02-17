@@ -6,9 +6,9 @@ function SignUp(props) {
   let _password = null;
   let _name = null;
 
-  function handleNewUserSubmissionForm(event) {
-    event.preventDefault();
-    props.onCreateProfile({email: _email.value, password: _password.value, name: _name.value});
+  function handleNewUserSubmissionForm() {
+    // props.onCreateProfile({email: _email.value, password: _password.value, name: _name.value});
+    console.log(props.onCreateProfile);
   }
 
   return (
@@ -42,21 +42,21 @@ function SignUp(props) {
         }
       `}</style>
       <h2>Sign Up</h2>
-      <form onSubmit={handleNewUserSubmissionForm}>
+      <form>
         <label>Email</label>
         <input type="email" ref={(input) => {_email = input;}}/>
         <label>Password:</label>
         <input type="password" ref={(input) => {_password = input;}}/>
         <label>Name:</label>
         <input type="name" ref={(input) => {_name = input;}}/>
-        <button type="submit">Sign Up</button>
+        <button onClick={handleNewUserSubmissionForm} type="button">Sign Up</button>
       </form>
     </div>
   );
 }
 
 SignUp.propTypes = {
-  onCreateProfile: PropTypes.func
+  onCreateProfile: PropTypes.string
 };
 
 export default SignUp;
